@@ -35,3 +35,7 @@ textarea {
 .center-response-img {
     margin: 0 auto;
 }
+
+.thin-border {
+    border: 1px solid black;
+}
