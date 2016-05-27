@@ -180,14 +180,24 @@
     <Content Include="Content\Images\battle.JPG" />
     <Content Include="Content\Images\battleend.JPG" />
     <Content Include="Content\Images\boss.JPG" />
+    <Content Include="Content\Images\completedorders.JPG" />
     <Content Include="Content\Images\GitHub-Mark-Light-32px.png" />
+    <Content Include="Content\Images\menu.JPG" />
+    <Content Include="Content\Images\neworder.JPG" />
+    <Content Include="Content\Images\search.JPG" />
     <Content Include="Content\Images\shop.JPG" />
     <Content Include="Content\Images\startgame.JPG" />
     <Content Include="Content\Images\Thumbs\battleend_thumb.jpg" />
     <Content Include="Content\Images\Thumbs\battle_thumb.jpg" />
     <Content Include="Content\Images\Thumbs\boss_thumb.jpg" />
+    <Content Include="Content\Images\Thumbs\completedorders_thumb.jpg" />
+    <Content Include="Content\Images\Thumbs\menu_thumb.jpg" />
+    <Content Include="Content\Images\Thumbs\neworder_thumb.jpg" />
+    <Content Include="Content\Images\Thumbs\search_thumb.jpg" />
     <Content Include="Content\Images\Thumbs\shop_thumb.jpg" />
     <Content Include="Content\Images\Thumbs\startgame_thumb.jpg" />
+    <Content Include="Content\Images\Thumbs\vieworders_thumb.jpg" />
+    <Content Include="Content\Images\vieworders.JPG" />
     <Content Include="favicon.ico" />
     <Content Include="font-awesome-4.6.3\css\font-awesome.css" />
     <Content Include="font-awesome-4.6.3\css\font-awesome.min.css" />
@@ -288,9 +298,9 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Home\Projects.cshtml" />
     <Content Include="Views\Projects\TextRPG.cshtml" />
     <Content Include="Views\Projects\Index.cshtml" />
+    <Content Include="Views\Projects\KrohnDesignsOrdersJava.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

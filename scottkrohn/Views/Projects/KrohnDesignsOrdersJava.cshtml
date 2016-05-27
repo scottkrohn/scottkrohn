@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "KrohnDesignsOrdersJava";
+}
+
+<div class="container-fluid">
+    <div class="row add-top-margin">
+        <div class="row">
+            <div class="row">
+                <div class="col-sm-3">
+                    <a href="@Url.Action("Index", "Projects")" class="">
+                        <span class="fa fa-arrow-circle-left"></span> Back to Project Directory
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-12 text-center">
+                <h2>Krohn Designs Sales Application (Java)</h2>
+            </div>
+            <div class="col-sm-12 text-center">
+                <a href="https://github.com/scottkrohn/KrohnDesignsInventoryMgmt" target="_blank" style="margin-bottom: 10px;" class="btn btn-primary"><span class="fa fa-github-alt"></span> View on Github</a>
+            </div>
+            <div class="col-sm-12 text-center">
+                <p>This is a GUI application to input orders submitted to Krohn Designs written in Java. It's similar in functionality to the other Krohn Designs Sales application I wrote, 
+                but rather than storing data a MySql database it stores the data in a serialized java object. You can enter new orders, view past orders, complete orders and edit/delete orders.
+                Eventually I am going to add functionality to create supply lists based on the current open orders. 
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center ">
+                    <h4 id="textrpg_description">Main Menu</h4>
+                    <img src="~/Content/Images/menu.JPG" id="main_textrpg_image" class="img-responsive center-response-img thin-border"/>
+                </div>
+                <div class="col-md-12 text-center add-top-margin">
+                    <a href="" id="thumb" data-large_img="/Content/Images/menu.JPG">
+                        <img src="~/Content/Images/Thumbs/menu_thumb.jpg" alt="Main Menu"/></a>
+                    <a href="" id="thumb" data-large_img="/Content/Images/neworder.JPG">
+                        <img src="~/Content/Images/Thumbs/neworder_thumb.jpg" alt="Submit New Order"/></a>
+                    <a href="" id="thumb" data-large_img="/Content/Images/search.JPG">
+                        <img src="~/Content/Images/Thumbs/search_thumb.jpg" alt="Search Orders"/></a>
+                    <a href="" id="thumb" data-large_img="/Content/Images/vieworders.JPG">
+                        <img src="~/Content/Images/Thumbs/vieworders_thumb.jpg" alt="View Orders"/></a>
+                    <a href="" id="thumb" data-large_img="/Content/Images/completedorders.JPG">
+                        <img src="~/Content/Images/Thumbs/completedorders_thumb.jpg" alt="View Completed Orders"/></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="~/Scripts/jquery-2.2.3.js"> </script>
+
+<!-- Set the 'src' attribute of the main image based on the thumbnail clicked.-->
+<script>
+    $("a#thumb").click(function (event) {
+        event.preventDefault();
+        var fullsize_photo = $(this).data('large_img');
+        $("#textrpg_description").html($(this).find("img").attr("alt"));
+        $("img#main_textrpg_image").attr("src", fullsize_photo);
+    });
+</script>
+
+
+
