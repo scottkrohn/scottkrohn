@@ -23,5 +23,10 @@ namespace scottkrohn.Controllers
 		{
 			return View();
 		}
+
+		public ActionResult PersonalGradebook()
+		{
+			return View();
+		}
 	}
 }

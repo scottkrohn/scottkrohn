@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -29,6 +30,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PublishDatabases>false</PublishDatabases>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -181,19 +183,27 @@
     <Content Include="Content\Images\battleend.JPG" />
     <Content Include="Content\Images\boss.JPG" />
     <Content Include="Content\Images\completedorders.JPG" />
+    <Content Include="Content\Images\CoursePage.jpg" />
+    <Content Include="Content\Images\FinalGradeCalc.jpg" />
     <Content Include="Content\Images\GitHub-Mark-Light-32px.png" />
+    <Content Include="Content\Images\Homepage.jpg" />
     <Content Include="Content\Images\menu.JPG" />
     <Content Include="Content\Images\neworder.JPG" />
     <Content Include="Content\Images\search.JPG" />
+    <Content Include="Content\Images\Semester.jpg" />
     <Content Include="Content\Images\shop.JPG" />
     <Content Include="Content\Images\startgame.JPG" />
     <Content Include="Content\Images\Thumbs\battleend_thumb.jpg" />
     <Content Include="Content\Images\Thumbs\battle_thumb.jpg" />
     <Content Include="Content\Images\Thumbs\boss_thumb.jpg" />
     <Content Include="Content\Images\Thumbs\completedorders_thumb.jpg" />
+    <Content Include="Content\Images\Thumbs\CoursePageThumb.jpg" />
+    <Content Include="Content\Images\Thumbs\FinalGradeCalcThumb.jpg" />
+    <Content Include="Content\Images\Thumbs\HomepageThumb.jpg" />
     <Content Include="Content\Images\Thumbs\menu_thumb.jpg" />
     <Content Include="Content\Images\Thumbs\neworder_thumb.jpg" />
     <Content Include="Content\Images\Thumbs\search_thumb.jpg" />
+    <Content Include="Content\Images\Thumbs\SemesterThumb.jpg" />
     <Content Include="Content\Images\Thumbs\shop_thumb.jpg" />
     <Content Include="Content\Images\Thumbs\startgame_thumb.jpg" />
     <Content Include="Content\Images\Thumbs\vieworders_thumb.jpg" />
@@ -247,6 +257,7 @@
     <Content Include="font-awesome-4.6.3\scss\_screen-reader.scss" />
     <Content Include="font-awesome-4.6.3\scss\_stacked.scss" />
     <Content Include="font-awesome-4.6.3\scss\_variables.scss" />
+    <None Include="Properties\PublishProfiles\scottkrohn.com - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -301,6 +312,7 @@
     <Content Include="Views\Projects\TextRPG.cshtml" />
     <Content Include="Views\Projects\Index.cshtml" />
     <Content Include="Views\Projects\KrohnDesignsOrdersJava.cshtml" />
+    <Content Include="Views\Projects\PersonalGradebook.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

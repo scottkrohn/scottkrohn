@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "PersonalGradebook";
+}
+
+<div class="container-fluid">
+    <div class="row add-top-margin">
+        <div class="row">
+            <a href="@Url.Action("Index", "Projects")" class="">
+                <span class="fa fa-arrow-circle-left"></span> Back to Project Directory
+            </a>
+        </div>
+
+        <div class="col-sm-12 text-center">
+            <h2>PersonalGradebook.com</h2>
+        </div>
+
+         <div class="col-sm-12 text-center">
+             <a href="https://github.com/scottkrohn/gradetracker" target="_blank" style="margin-bottom: 10px;" class="btn btn-primary"><span class="fa fa-github-alt"></span> View on Github</a>
+         </div>
+
+        <div class="col-sm-12 text-center">
+            <p><a href="http://www.personalgradebook.com" target="_blank"><strong>PersonalGradebook.com</strong></a> is a web application written in C# for students. It allows the students to track their grades
+            (weights and non-weighted). I wrote this as an alternative place for students to track their grades because most professors
+            don't properly use weighted grades in applications like Canvas or Blackboard. The student has full control over grade inputs,
+            grading category weights and assignment names. They can also calculate the grade needed on their finals in order to achieve
+            a certain grade in a class.
+            </p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h4 id="description">Homepage</h4>
+                <img src="~/Content/Images/Homepage.JPG" id="main_image" class="img-responsive center-response-img thin-border" style="width: 755px;"/>
+            </div>
+            <div class="col-md-12 text-center add-top-margin">
+                <a href="" class="thumb" data-large_img="/Content/Images/Homepage.JPG">
+                    <img src="~/Content/Images/Thumbs/HomepageThumb.jpg" alt="Homepage" class="thin-border"/></a>
+                <a href="" class="thumb" data-large_img="/Content/Images/CoursePage.JPG">
+                    <img src="~/Content/Images/Thumbs/CoursePageThumb.jpg" alt="Course Page" class="thin-border"/></a>
+                <a href="" class="thumb" data-large_img="/Content/Images/Semester.JPG">
+                    <img src="~/Content/Images/Thumbs/SemesterThumb.jpg" alt="Semester Page" class="thin-border"/></a>
+                <a href="" class="thumb" data-large_img="/Content/Images/FinalGradeCalc.JPG">
+                    <img src="~/Content/Images/Thumbs/FinalGradeCalcThumb.jpg" alt="Final Grade Calculator" class="thin-border"/></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="~/Scripts/jquery-2.2.3.js"> </script>
+
+<script>
+    $(".thumb").click(function (event) {
+        event.preventDefault();
+        var fullsize_photo = $(this).data('large_img');
+        $("#description").html($(this).find("img").attr("alt"));
+        $("img#main_image").attr("src", fullsize_photo);
+    });
+</script>
+
